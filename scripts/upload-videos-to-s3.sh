@@ -3,9 +3,9 @@
 # Usage: ./scripts/upload-videos-to-s3.sh
 set -euo pipefail
 
-PROFILE="target-317877151524"
+PROFILE="target-834928221429"
 REGION="us-east-1"
-BUCKET="arignar-ita-deck-media"
+BUCKET="arignar-ita-presentation-media"
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 export AWS_PROFILE="$PROFILE"
