@@ -686,6 +686,26 @@
       background: var(--brand)
     }
 
+    .nav .home-btn {
+      height: 38px;
+      width: auto;
+      padding: 0 18px;
+      border-radius: 100px;
+      background: rgba(27, 36, 64, .85);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background .2s;
+    }
+
+    .nav .home-btn:hover {
+      background: var(--brand)
+    }
+
     .hint {
       position: fixed;
       bottom: 22px;
@@ -1628,7 +1648,7 @@
   </div>
 
   <div class="counter" id="counter">1 / 17</div>
-  <div class="nav"><button id="prev">‹</button><button id="fs">⛶</button><button id="next">›</button></div>
+  <div class="nav"><a class="home-btn" href="index.html">‹ Home</a><button id="prev">‹</button><button id="fs">⛶</button><button id="next">›</button></div>
   <div class="hint">← → to navigate · F for fullscreen</div>
 
   <script>
