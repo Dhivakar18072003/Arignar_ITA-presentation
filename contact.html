@@ -182,6 +182,30 @@
       color: rgba(255, 255, 255, .6);
     }
 
+    .home-btn {
+      position: fixed;
+      top: 22px;
+      left: 22px;
+      z-index: 50;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .22);
+      backdrop-filter: blur(4px);
+      color: #eaf0ff;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s ease;
+    }
+
+    .home-btn:hover {
+      background: rgba(255, 255, 255, .22)
+    }
+
     @media (max-width:600px) {
       .brandmark-row {
         flex-direction: column;
@@ -196,6 +220,8 @@
 </head>
 
 <body>
+
+  <a class="home-btn" href="index.html">‹ Home</a>
 
   <div>
     <div class="brandmark-row">
